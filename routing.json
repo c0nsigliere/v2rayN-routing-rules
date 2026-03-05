@@ -1,0 +1,30 @@
+[
+  {
+    "outboundTag": "block",
+    "domain": [
+      "geosite:category-ads-all"
+    ],
+    "enabled": true,
+    "remarks": "Ad Cut"
+  },
+  {
+    "outboundTag": "direct",
+    "ip": [
+      "geoip:ru"
+    ],
+    "domain": [
+      "domain:ru",
+      "domain:su"
+    ],
+    "enabled": true,
+    "remarks": "RU Direct",
+    "ruleType": 0
+  },
+  {
+    "network": "tcp,udp",
+    "outboundTag": "proxy",
+    "enabled": true,
+    "remarks": "Global Proxy",
+    "ruleType": 0
+  }
+]
